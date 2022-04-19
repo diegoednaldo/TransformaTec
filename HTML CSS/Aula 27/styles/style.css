@@ -126,3 +126,50 @@ form input{
     font-size:15px;
     font-family: 'Arial';
 }
+
+@media(max-width:950px){
+    .container{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 400px;
+        align-content: center;
+        align-items: center;
+    }
+
+    .left p{
+        height: 75px;
+        font-size: 24px;
+    }
+}
+
+@media(max-width:500px){
+    form{
+        width:350px;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:300px){
+    .left img{
+        height: 95px;
+    }
+
+    form{
+        width: 250px;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        top: -65px;
+    }
+
+    .left p,.right p{
+        display: none;
+    }
+
+    form input, .forget, .loginBtn, .signupBtn{
+        font-size: 12px;
+    }
+}
